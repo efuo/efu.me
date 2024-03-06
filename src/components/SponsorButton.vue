@@ -1,19 +1,7 @@
 <template>
   <div flex="~ wrap gap-2 items-center justify-center">
     <a
-      href="https://github.com/sponsors/antfu"
-      target="_blank"
-      class="group btn-rose"
-    >
-      <div
-        i-carbon-favorite
-        group-hover="i-carbon-favorite-filled?mask text-rose"
-        transition-all duration-200 ease-out
-      />
-      Sponsor to support my work
-    </a>
-    <a
-      href="https://afdian.net/a/antfu"
+      href="https://afdian.net/a/wleelw0u0"
       target="_blank"
       class="group btn-yellow"
     >
