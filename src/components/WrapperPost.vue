@@ -12,10 +12,6 @@ const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
 
-const base = 'https://antfu.me'
-const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @antfu7\'s ${base}${route.path}\n\nI think...`)}`)
-const elkUrl = computed(() => `https://elk.zone/intent/post?text=${encodeURIComponent(`Reading @antfu@m.webtoo.ls\'s ${base}${route.path}\n\nI think...`)}`)
-
 onMounted(() => {
   const navigate = () => {
     if (location.hash) {
@@ -73,6 +69,32 @@ onMounted(() => {
       setTimeout(navigate, 1000)
   }, 1)
 })
+
+const cdnScript: HTMLScriptElement = document.createElement('script')
+cdnScript.src = 'https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js'
+cdnScript.async = true
+
+function loadSecondScript() {
+  const initScript = document.createElement('script')
+  initScript.innerHTML = `
+            twikoo.init({
+                envId: "https://twikooo.netlify.app/.netlify/functions/twikoo",
+                el: '#twikoo-comment',
+                lang: 'en'
+            });
+        `
+  initScript.id = 'twikoo-init-id'
+  document.body.appendChild(initScript)
+}
+
+cdnScript.onload = loadSecondScript
+document.body.appendChild(cdnScript)
+
+const initScript = document.getElementById('twikoo-init-id')
+if (initScript) {
+  initScript.remove()
+  loadSecondScript()
+}
 </script>
 
 <template>
@@ -119,19 +141,16 @@ onMounted(() => {
     <slot />
   </article>
   <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
-    <template v-if="frontmatter.duration">
-      <span font-mono op50>> </span>
-      <span op50>comment on </span>
-      <a :href="elkUrl" target="_blank" op50>mastodon</a>
-      <span op25> / </span>
-      <a :href="tweetUrl" target="_blank" op50>twitter</a>
-    </template>
-    <br>
-    <span font-mono op50>> </span>
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'"
       class="font-mono op50 hover:op75"
       v-text="'cd ..'"
     />
+    <hr>
+    <span font-mono op50 />
+    <div class="max-w-65ch m-auto">
+      <div id="twikoo-comment" />
+    </div>
+    <br>
   </div>
 </template>

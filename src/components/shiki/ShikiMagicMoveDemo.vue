@@ -37,7 +37,7 @@ onMounted(() => {
           :class="index === 1 ? 'bg-base' : 'bg-gray:5 op25 hover:op75'"
           @click="index = 1; clearTimer()"
         >
-          Options API
+          JavaScript
         </button>
       </div>
       <div

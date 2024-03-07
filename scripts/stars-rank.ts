@@ -1,19 +1,6 @@
 export function getStarsRankingUrl() {
   const users = [
-    'antfu',
-    'codecember',
-    'knightly',
-    'slidevjs',
-    'type-challenges',
-    'unocss',
-    'elk-zone',
-    'vueuse',
-    'vitest-dev',
-    'vue-reactivity',
-    'vite-pwa',
-    'eslint-stylistic',
-    'twoslashes',
-    'shikijs',
+    'efuo',
   ]
   const repos = [
     'lokalise/i18n-ally',
