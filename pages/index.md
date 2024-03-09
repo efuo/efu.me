@@ -22,4 +22,4 @@ Find me on
   <a href="https://space.bilibili.com/1329819902" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>
 </p>
 
-If you enjoy my works, consider sponsoring me on [<span i-carbon-lightning /> 爱发电](https://afdian.net/a/wleelw0u0) to keep them sustainable.
+If you enjoy my works, consider sponsoring me on [<span i-carbon-lightning /> 爱发电](https://afdian.net/a/efu0u0) to keep them sustainable.

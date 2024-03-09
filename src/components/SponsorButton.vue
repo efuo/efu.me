@@ -1,7 +1,7 @@
 <template>
   <div flex="~ wrap gap-2 items-center justify-center">
     <a
-      href="https://afdian.net/a/wleelw0u0"
+      href="https://afdian.net/a/efu0u0"
       target="_blank"
       class="group btn-yellow"
     >
