@@ -29,7 +29,7 @@ async function buildBlogRSS() {
     title: 'Efu',
     description: 'Efu\' Blog',
     id: 'https://efu.me/',
-    link: 'https://efu.me/',
+    link: 'https://efu.me/posts/', // Update the link to include "/posts/"
     copyright: 'CC BY-NC-SA 4.0 2021 © Efu',
     feedLinks: {
       json: 'https://efu.me/feed.json',
@@ -44,8 +44,8 @@ async function buildBlogRSS() {
           const raw = await fs.readFile(i, 'utf-8')
           const { data, content } = matter(raw)
 
-          if (data.lang !== 'en')
-            return
+          // if (data.lang !== 'en')
+          //   return
 
           const html = markdown.render(content)
             .replace('src="/', `src="${DOMAIN}/`)
@@ -58,7 +58,7 @@ async function buildBlogRSS() {
             date: new Date(data.date),
             content: html,
             author: [AUTHOR],
-            link: DOMAIN + i.replace(/^pages(.+)\.md$/, '$1'),
+            link: DOMAIN + i.replace(/^pages(.+)\.md$/, '/posts$1'), // Update the link to include "/posts/"
           }
         }),
     ))
