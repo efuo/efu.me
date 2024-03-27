@@ -124,22 +124,22 @@ aside:
     vague: true
 
   tags:
-    enable: true
+    enable: false
     limit: 20
     highlight: false
     list:
     # - "Solitude"
 
   archive:
-    enable: true
+    enable: false
     type: "month"
 
   siteinfo:
     postcount: true
     wordcount: false
-    pv: true
-    uv: true
-    updatetime: true
+    pv: false
+    uv: false
+    updatetime: false
     runtimeenable: true
     runtime: "2023-04-20 00:00:00"
 
@@ -234,8 +234,8 @@ footer:
   #   版权协议: /copyright/
 
   randomlink: true
-  privacy: # /privacy/
-  license: # /license/
+  privacy: / # /privacy/
+  license: / # /license/
   links:
     - name: Theme
       url: https://github.com/valor-x/hexo-theme-solitude
@@ -273,7 +273,7 @@ keyboard:
   list:
     - name: Turn off key
       key: K
-      func: keyboard
+      sco: switchKeyboard
     - name: Open Console
       key: A
       sco: showConsole
@@ -321,7 +321,7 @@ opengraph:
 
 wordcount: true
 
-busuanzi: true
+busuanzi: false
 
 search:
   enable: false
