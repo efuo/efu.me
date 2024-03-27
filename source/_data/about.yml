@@ -27,27 +27,30 @@ skills: # 根据需求添加
   title: Skill
   subtitle: Unlock your creativity.
   tags:
-    - title: HTML
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
-      color: '#e9572b'
-    - title: Javascript
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
-      color: '#f7cb4f'
     - title: Kotlin
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
-      color: '#ffffff'
-    - title: WebPack
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
-      color: '#2e3a41'
-    - title: Git
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
-      color: '#df5b40'
-    - title: Docker
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
-      color: '#57b6e6'
-    - title: Visual Studio
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
-      color: '#ffffff'
+      icon: /img/icon/kotlin.png
+      color: "var(--efu-blue)"
+    - title: Csharp
+      icon: /img/icon/csharp.png
+      color: "var(--efu-purple)"
+    - title: Nuxt
+      icon: /img/icon/nuxt.png
+      color: '#0E182A'
+    - title: NPM
+      icon: /img/icon/npm.png
+      color: var(--efu-white)
+    - title: Sketch
+      icon: /img/icon/sketch.png
+      color: var(--efu-white)
+    - title: Final Cut Pro
+      icon: /img/icon/final_cut_pro.png
+      color: var(--efu-white)
+    - title: PS
+      icon: /img/icon/ps.png
+      color: '#001E36'
+    - title: AI
+      icon: /img/icon/ai.png
+      color: '#330202'
 
 careers:
   title: 'Career'
