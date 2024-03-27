@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "kk": "hexo g"
+    "kk": "hexo g && gulp"
   },
   "hexo": {
     "version": "7.1.1"

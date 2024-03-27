@@ -244,7 +244,7 @@ footer:
 
 errorpage:
   img: https://7.isyangs.cn/34/65f2e65eae32a-34.png
-  text: =awa= 页面走丢了
+  text: =awa= Not Found
   recommendList: true
 
 says:
@@ -342,15 +342,6 @@ search:
 rightside:
   enable: false
 
-post_ai:
-  enable: false
-  modelName: GPT 4
-  key:
-  talk: 我是 Efu 开发的摘要生成助理EfuGPT，EfuGPT在静态部署时进行摘要的撰写，并且在访客访问时通过EfuCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
-  randomPost: false
-  report: https://efu.me/
-  tips: 此内容根据文章生成，并经过人工审核，仅用于文章内容的解释与总结
-
 katex:
   enable: false
   per_page: false # 是否在每页都加载 / Whether to load on each page
@@ -378,7 +369,7 @@ comment:
 
 verify_site:
 
-css_prefix: true
+css_prefix: false
 
 font:
   font-size: 16px
@@ -409,7 +400,7 @@ google_adsense:
   slot: # 4236388782
 
 CDN:
-  internal: local
+  internal: cdnjs
   third_party: cdnjs
 
   version: true
