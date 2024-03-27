@@ -17,16 +17,11 @@ nav:
       Archives: /archives/ || st-folder-fill
       Categories: /categories/ || st-checkbox-multiple-blank-fill
       Tags: /tags/ || st-price-tag-fill
-    Links:
-      Moments: /moments/ || st-wifi-fill
-      Friends: /links/ || st-group-fill
-      Traveling: javascript:travelling() || st-gift-fill
-    Oneself:
-      Equipment: /equipment/ || st-laptop-line
-      Toolbox: /tlink/ || st-tools-fill
-      Music: /music/ || st-disc-fill
-    Contact:
-      About Us: /about/ || st-contacts-fill
+    Links: /links/
+    #    Oneself:
+    #      Equipment: /equipment/ || st-laptop-line
+    #      Toolbox: /tlink/ || st-tools-fill
+    About: /about/
 
   right:
     random: true
@@ -45,15 +40,30 @@ hometop:
     title: Be careful<br > and enjoy it.
     url: EFU.ME
     icon:
-      HTML:
-        img: https://7.isyangs.cn/34/65f2e42921677-34.png
-        color: "#e9572b"
-      JS:
-        img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
-        color: "#f7cb4f"
-      Git:
-        img: https://7.isyangs.cn/34/65f2e499066fa-34.png
-        color: "#df5b40"
+      Kotlin:
+        img: /img/icon/kotlin.png
+        color: "var(--efu-blue)"
+      Csharp:
+        img: /img/icon/csharp.png
+        color: "var(--efu-purple)"
+      Nuxt:
+        img: /img/icon/nuxt.png
+        color: '#0E182A'
+      NPM:
+        img: /img/icon/npm.png
+        color: var(--efu-white)
+      Sketch:
+        img: /img/icon/sketch.png
+        color: var(--efu-white)
+      Final Cut Pro:
+        img: /img/icon/final_cut_pro.png
+        color: var(--efu-white)
+      PS:
+        img: /img/icon/ps.png
+        color: '#001E36'
+      AI:
+        img: /img/icon/ai.png
+        color: '#330202'
 
   group:
   # 热门: /tags/热门/ || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
@@ -114,14 +124,14 @@ aside:
     vague: true
 
   tags:
-    enable: false
+    enable: true
     limit: 20
     highlight: false
     list:
     # - "Solitude"
 
   archive:
-    enable: false
+    enable: true
     type: "month"
 
   siteinfo:
@@ -134,8 +144,8 @@ aside:
     runtime: "2023-04-20 00:00:00"
 
 index_post_list:
-  direction: column
-  content: 3
+  direction: row
+  content: 2
   length: 500
   cover: both
 
@@ -155,52 +165,50 @@ post:
       license: CC BY-NC-SA 4.0
       licenurl: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
   meta:
-    date: false # 发布日期 / Release date
-    updated: false # 更新日期 / Update date
-    locate: false # 位置 / Location
-    wordcount: false # 字数 / Number of words
-    readtime: false # 访问 / uv
-    pv: false # 浏览量 / pv
-    comment: false # 评论数 / Comment count
+    date: true
+    updated: true
+    locate: true
+    wordcount: true
+    readtime: true
+    pv: true
+    comment: true
   award:
-    enable: false
-    wechat: https://7.isyangs.cn/34/65f2e5814db1a-34.png
-    alipay: https://7.isyangs.cn/34/65f2e5a6d2ef5-34.png
-    url: /about
+    enable: true
+    appreciators: /about
+    title: Thank you for the appreciation.
+    desc: Because of your support, I realized the value of writing articles.
+    list:
+      - name: Alipay
+        qcode: https://7.isyangs.cn/34/65f2e5a6d2ef5-34.png
+        color: var(--efu-blue)
   rss: # /atom.xml
   covercolor:
     enable: true
-    mode: local # local：本地取色 / api：img2color取色 : local: local color / api: img2color color
-    api: https://api.qjqq.cn/api/Imgcolor?img= # api地址 / api address
-    time: 43200000 # api取色间隔（毫秒），默认为12小时 / api color interval (milliseconds), default is 12 hours
+    mode: local
+    api: https://api.qjqq.cn/api/Imgcolor?img=
+    time: 43200000
 
 theme_color:
-  dark: "#ffc848" # 暗色模式 / Dark mode
-  dark_op: "#f2b94b23" # 暗色模式透明 / Dark mode transparent
-  dark_op_deep: "#f2b94bdd" # 暗色模式透明深色 / Dark mode transparent dark
-  dark_none: "#f2b94b00" # 暗色模式透明无色 / Dark mode transparent colorless
-  light: "#425AEF" # 亮色模式 / Light mode
-  light_op: "#4259ef23" # 亮色模式透明 / Light mode transparent
-  light_op_deep: "#4259efdd" # 亮色模式透明深色 / Light mode transparent dark
-  light_none: "#4259ef01" # 亮色模式透明无色 / Light mode transparent colorless
+  dark: "#ffc848"
+  dark_op: "#f2b94b23"
+  dark_op_deep: "#f2b94bdd"
+  dark_none: "#f2b94b00"
+  light: "#425AEF"
+  light_op: "#4259ef23"
+  light_op_deep: "#4259efdd"
+  light_none: "#4259ef01"
 
 display_mode:
-  type: auto # auto: 自动切换 / dark: 暗色模式 / light: 亮色模式 / auto: automatic switching / dark: dark mode / light: light mode
-  universe: true # 开启后暗色模式下会显示星空背景 / After opening, the dark mode will display the starry sky background
+  type: auto
+  universe: true
 
 
 related_post:
   enable: false
-  # 推荐文章数量
-  # Number of recommended articles
   limit: 2
-  # 根据创建日期（created）或是更新日期（updated）
-  # According to the creation date (created) or the update date (updated)
   date_type: created
 
 footer:
-  # 底部上方一排图标
-  # Bottom row of icons
   information:
     left: # 左侧显示图标
       Github: https://github.com/efuo || st-github-line # 名称：链接 || 图标 / Name: link || icon
@@ -225,129 +233,44 @@ footer:
   #   用户协议: /privacy/
   #   版权协议: /copyright/
 
-  # 页脚随机友链
-  # Random links at footer
-  # warning: 打开前必须先配置links
-  # warning: links must be configured before opening
-  randomlink: false
-  # 隐私助手右侧弹窗，填写路径后开启
-  # Privacy assistant right pop-up window, fill in the path to open
+  randomlink: true
   privacy: # /privacy/
-  # 版权(Copyright)
   license: # /license/
-  # 页脚右侧链接，例如：ICP备案号、公安备案号等
-  # Footer right link, such as: ICP filing number, public security filing number, etc.
   links:
-    # 为了主题能够得到更多的支持，建议保留主题链接
-    # In order for the theme to get more support, it is recommended to keep the theme link
     - name: Theme
       url: https://github.com/valor-x/hexo-theme-solitude
-    # - name: 订阅
-    #   url: /atom.xml
+    - name: RSS
+      url: /atom.xml
 
-# 404 页面(404 page)
 errorpage:
-  # 图片
-  # image
   img: https://7.isyangs.cn/34/65f2e65eae32a-34.png
-  # 文字
-  # text
   text: =awa= 页面走丢了
-  # 推荐文章列表
-  # Recommended article list
   recommendList: true
 
-# 即刻短文
-# talk now
-# 前置要求：需配置即刻短文页面
-# Pre-requirements: talk now page needs to be configured
 says:
   enable: false
-  # 主页的即刻轮播条
-  # Talk carousel bar on the homepage
   home_mini: false
-  # 1：张洪heo样式 / 2：Leonus样式
-  # 1: Zhang Hong heo style / 2: Leonus style
   style: 1
-  # 即刻短文仅展示前n条
-  # Talk short text only shows the first n
   strip: 30
 
-# -------------------------
-# meeting-api，用于界面中的音乐胶囊和音乐馆页，可自定义api，不会请勿动。
-# meeting-api, used for music capsules and music halls in the interface, can customize api, do not move if you don't know.
 meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" #自定义api
-# 音乐馆页
-# music page
 music:
   enable: false
-  # 音乐ID：歌单ID / 专辑ID / 歌手ID
-  # Music ID: playlist ID / album ID / singer ID
-  id: 1994908354
-  # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
-  # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
+  id: 9486968429
   server: netease
-  # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手
-  # Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
   type: playlist
-  # 初始音量。0.8 = 80%，范围 0 到 1
-  # Initial volume. 0.8 = 80%, range 0 to 1
   volume: 0.8
-  # 是否开启互斥模式，即同时只能有一个播放器播放
-  # Whether to enable mutex mode, that is, only one player can play at the same time
   mutex: true
 
-# 音乐胶囊
-# capsule music
 capsule:
   enable: true
-  # 歌单id / playlist id
-  id: 8407304077
-  # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
-  # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
+  id: 9486968429
   server: netease
-  # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手
-  # Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
   type: playlist
 
-# 友链鱼塘
-# Links fish pond
-moments:
-  # enable
-  enable: false
-  # API 地址
-  # example: https://example.com/
-  api: # https://example.com/
-  # 加载失败显示图片 / Loading failed display image
-  error_img: /img/logo.png
-  # 排序规则：created：按创建时间排序 / updated：按更新时间排序
-  # Sort rule: created: Sort by creation time / updated: Sort by update time
-  sort_rule: created
-  # 缓存过期时间（天），默认为1天 / Cache expiration time (days), default is 1 day
-  expire_days: 1
-  # 页面初始化加载数量，默认为10条 / Page initialization loading quantity, default is 10
-  page_init_number: 10
-  # 页面翻页加载数量，默认为5条 / Page turning loading quantity, default is 5
-  page_turning_number: 5
-  # 鱼塘随机文章 / Fish pond random article
-  angle: false
-  appjs: https://cdn.cbd.int/st-source@1.0.3/js/fcircle.min.js
-  bundlejs: https://cdn.cbd.int/st-source/js/moment/bundle.min.js
-  randompostjs: https://cdn.cbd.int/st-source/js/moment/random_post.min.js
-
-# 快捷菜单你
-# quick menu
 keyboard:
-  enable: true # 是否开启键盘控制 / Whether to enable keyboard control
-  # 键盘控制配置
-  # Keyboard control configuration
+  enable: true
   list:
-    # name: 按键名称(name)
-    # key: 按键(Key)
-    # func: 方法(function)
-    # sco: sco内置方法(sco.'function')
-    # url: 跳转链接(link)
-    # ------------------
     - name: Turn off key
       key: K
       func: keyboard
@@ -361,67 +284,30 @@ keyboard:
       key: L
       url: "/links/"
 
-# 懒加载
-# lazyload
 lazyload:
   enable: true
-  field: site # post, site
-  # 加载中显示图片
-  # Loading display image
+  field: site
   placeholder: /img/loading.gif
-  # 加载失败显示图片
-  # Loading failed display image
   errorimg: /img/error_load.png
 
-# 加载动画
-# loading animation
 loading:
-  # 全局加载动画
-  # Global loading animation
   fullpage: true
-  # 顶部加载胶囊
-  # Top loading capsule
   pace: true
 
 highlight:
   enable: true
-  limit: 200 # 代码行高限制 / Code line limit
-  copy: true # 是否开启复制按钮 / Whether to enable the copy button
-  expand: true # 是否默认展开 / Whether to expand by default
-  # 代码块样式
-  # Code block style
-  theme: mac # default: 默认 / mac : apple terminal
-  # 代码配色
-  # Code color
-  color: darcula # default: 默认  / dark / funky / okaidia / tomorrow / twilight / darcula / solarized-dark / solarized-light / material / github
+  limit: 200
+  copy: true
+  expand: true
+  theme: mac
+  color: solarized-dark # default: 默认  / dark / funky / okaidia / tomorrow / twilight / darcula / solarized-dark / solarized-light / material / github
 
-# 图片灯箱
-# image lightbox
-# warning：开启前下方的fancybox或mediumZoom必须打开一个
-# warning: One of the fancybox or mediumZoom below must be turned on before turning on
 lightbox: true
-# fancybox
-# https://fancyapps.com/fancybox/
 fancybox: true
-# mediumZoom
 mediumZoom: false
 
-# mermaid
-# https://mermaid.js.org/
 mermaid: false
 
-# 简繁转换
-# Simplified and Traditional Chinese conversion
-translate:
-  enable: false
-  # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 2
-  # Time delay
-  translateDelay: 0
-
-# Open Graph
-# https://ogp.me/
-# https://developers.facebook.com/docs/sharing/webmasters/
 opengraph:
   enable: true
   options:
@@ -433,20 +319,10 @@ opengraph:
   #  fb_admins:
   #  fb_app_id:
 
-# 字数统计
-# word count
-# warning：开启前需要安装字数统计插件
-# warning: You need to install the word count plugin before turning it on
-wordcount: false
+wordcount: true
 
-# 访问统计
-# access statistics
 busuanzi: true
 
-# 搜索
-# search
-# warning：开启前需要安装搜索插件
-# warning: You need to install the search plugin before turning it on
 search:
   enable: false
   # algolia, local
@@ -463,38 +339,18 @@ search:
     preload: false
     CDN:
 
-# rightside(右键菜单)
-# right menu
 rightside:
   enable: false
 
-# 文章摘要AI
-# post abstract AI
 post_ai:
   enable: false
-  # 右侧显示的模型名称
-  # Model name displayed on the right
   modelName: GPT 4
-  # key
-  # 具体获取方法见文档
-  # Specific acquisition method, see the document
   key:
-  # 自介
-  # talk
   talk: 我是 Efu 开发的摘要生成助理EfuGPT，EfuGPT在静态部署时进行摘要的撰写，并且在访客访问时通过EfuCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
-  # 随机文章按钮
-  # Random post button
   randomPost: false
-  # 举报链接，不填不显示
-  # Report link, do not fill in and do not display
   report: https://efu.me/
-  # 底部提示
-  # Bottom tip
   tips: 此内容根据文章生成，并经过人工审核，仅用于文章内容的解释与总结
 
-# latex 公式支持
-# latex formula support
-# docs: https://solitude-docs.efu.me/configuration/extra#数学公式
 katex:
   enable: false
   per_page: false # 是否在每页都加载 / Whether to load on each page
@@ -507,67 +363,33 @@ comment:
   type: # waline, twikoo
   commentBarrage: false # 热评开关 / Hot comment switch
   newComment: false # 最新评论开关 / Latest comment switch
-  # 匿名评论前部分随机信息 / Anonymous comment front random information
   randomInfoStart:
     - "聪敏的"
     - "可爱的"
     - "美丽的"
-  # 匿名评论后部分随机信息 / Anonymous comment after random information
   randomInfoEnd:
     - "白菜"
     - "小可爱"
     - "小仙女"
-  # twikoo 配置信息
-  # twikoo settings
   twikoo: # https://twikoo.js.org/
     envId: # url: https://twikoo.sondy.top/
     lang: "zh-CN" # 语言
     accessToken: # accessToken
-  # waline 配置信息
-  # waline settings
-  waline: # https://waline.js.org/
-    envId: # url: https://waline.wzsco.top
-    pageview: true # 是否开启页面访问量统计 / Whether to enable page access statistics
-    option: # waline配置项 / waline configuration item
 
-# 站点验证
-# Site verification
-# 仅需要填写验证代码即可，譬如：codeva-KReTIJu5us
-# Only need to fill in the verification code, such as: codeva-KReTIJu5us
 verify_site:
-# - name: google-site-verification
-#   content: xxxxxx
-# - name: baidu-site-verification
-#   content: xxxxxxx
 
-# CSS 前缀
-# CSS prefix
-# 有些 CSS 并不是所有浏览器都支持，需要增加对应的前缀才会生效
-# Some CSS is not supported by all browsers, and you need to add the corresponding prefix to take effect
-# 开启 css_prefix 后，会自动为一些 CSS 增加前缀。（会增加 20%的体积）
-# After opening css_prefix, some CSS will be automatically prefixed. (Will increase 20% of the volume)
 css_prefix: true
 
-# Font 字体
-# Font
 font:
   font-size: 16px
   code-font-size: 16px
   font-family: '"PingFang SC","Hiragino Sans GB","Microsoft YaHei"'
   code-font-family: '"monospace", "monospace"'
 
-# 插入代码到头部 </head> 之前 和 底部 </body> 之前
-# Insert code before </head> and before </body>
-# 插入额外代码 如：统计，广告等
-# Insert additional code such as: statistics, advertising, etc.
 extends:
   head: # 在head中插入 / Insert in head
-  # - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
 
-# PWA
-# https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps
-# docs: https://solitude-docs.efu.me/configuration/extra#pwa
 pwa:
   enable: false
   manifest: /manifest.json # manifest.json 文件路径
@@ -578,59 +400,21 @@ pwa:
   favicon_32_32: /img/logo.png # 32x32图标
   favicon_16_16: /img/logo.png # 16x16图标
 
-# 谷歌广告 (Google Adsense)
 google_adsense:
   enable: false
   auto_ads: false # 自动广告关闭后则为手动广告 / After auto ads are turned off, it is manual ads
   enable_page_level_ads: true # 页面级广告 / Page-level ads
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js # 谷歌广告js / Google Adsense js
-  # client id
-  # 无论是否开启自动广告，都需要填写 client id
-  # Whether to enable auto ads or not, you need to fill in the client id
   client: # ca-pub-XXXXXXXXXXXXXX
-  # slot id
-  # 只有关闭自动广告时才需要填写 slot id，可以在谷歌广告后台 按广告单元中创建广告位后获取
-  # Only when auto ads are turned off, you need to fill in the slot id, which can be obtained after creating an ad space in the Google Adsense background according to the ad unit
   slot: # 4236388782
 
-# CDN
-# Don't modify the following settings unless you know how they work
-# 非必要请不要修改
 CDN:
-  # The CDN provider of internal scripts (主题内 js 的 cdn 配置)
-  # option: local/jsdelivr/unpkg/cdnjs/custom
-  # Dev version can only choose. ( dev版本只能为 local )
   internal: local
-  # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
-  # option: jsdelivr/unpkg/cdnjs/custom
   third_party: cdnjs
 
-  # Add version number to url, true or false
   version: true
 
-  # Custom format
-  # For example: https://cdn.staticfile.net/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format: https://cdn.staticfile.net/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
     solitude_css: https://cdn2.codesign.qq.com/icons/7pOrz0WXB5ZWJPX/latest/iconfont.css
-    # algolia_search:
-    # instantsearch:
-    # pjax:
-    # twikoo:
-    # waline_js:
-    # waline_css:
-    # sharejs:
-    # sharejs_css:
-    # katex:
-    # katex_copytex:
-    # lazyload:
-    # aplayer_css:
-    # aplayer_js:
-    # meting_js:
-    # pace_js:
-    # lunr_js:
-    # swiper_css:
-    # swiper_js:
-    # busuanzi_js:
-    # snackbar_js:

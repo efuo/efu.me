@@ -1,0 +1,49 @@
+banner_suffix:
+links:
+  - class_name: Recommend
+    descr: Excellent bloggers who participate in the development of this site, provide design inspiration, and donate to this site # 分类简介
+    type: card
+    suffix:
+    link_list:
+      - name: Miaomint
+        link: https://0u0.ren/
+        descr: 是一个小菜喵~，喜欢 EDM 喜欢看番但是是个假二次元。
+        avatar: https://7.isyangs.cn/34/6603c1a0024dc-34.jpg
+        topimg: https://7.isyangs.cn/34/6603c1d479fe9-34.jpg
+        tag: Technology
+        color: vip
+      - name: isYangs
+        link: https://isyangs.cn
+        avatar: https://7.isyangs.cn/8/655c9835780a0-8.jpg
+        descr: 一个前端Bug构造师的博客
+        topimg: https://7.isyangs.cn/8/655c9835780a0-8.jpg
+  - class_name: Technology
+    descr: Technical knowledge-based blog
+    type: item
+    suffix:
+    link_list:
+      - name: Miaomint
+        link: https://0u0.ren/
+        descr: 是一个小菜喵~，喜欢 EDM 喜欢看番但是是个假二次元。
+        avatar: https://7.isyangs.cn/34/6603c1a0024dc-34.jpg
+        tag: Technology
+        color: vip
+      - name: isYangs
+        link: https://isyangs.cn
+        avatar: https://7.isyangs.cn/8/655c9835780a0-8.jpg
+        descr: 一个前端Bug构造师的博客
+      - name: btwoa
+        link: https://blog.btwoa.com/
+        avatar: https://7.isyangs.cn/34/6603c350d56f9-34.jpg
+        descr: 一个技术宅。
+  - class_name: Life
+    descr: Life Blog
+    type: item
+    suffix:
+    link_list:
+      - name: 张洪Heo
+        link: https://blog.zhheo.com
+        descr: 分享技术与科技生活。
+        avatar: https://7.isyangs.cn/34/6603c417adf7d-34.jpg
+        tag: Heo
+        color: speed

@@ -1,0 +1,119 @@
+authorinfo:
+  leftTags:
+    - 🤖️ Digital technology
+    - 🔍 Share & Help
+    - 🏠 Smart home
+  rightTags:
+    - Down-to-earth 🏃
+    - Team group 🧱
+    - Design and development 🔨
+  image: https://7.isyangs.cn/34/6602e49f7acab-34.png
+
+title: About Us
+
+contentinfo: # 顶部个人信息展示
+  sup: Hello, nice to meet you. 👋
+  name: I am Efu # 名称
+  title: He is a student, software engineer, independent developer, and open source worker. # 介绍
+  tip: Pursue
+  slogan: <br>Create out of love
+  mask:
+    - Excellent product
+    - Excellent design
+    - Efficient programming
+    - User-friendly user experience
+
+skills: # 根据需求添加
+  title: Skill
+  subtitle: Unlock your creativity.
+  tags:
+    - title: HTML
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
+      color: '#e9572b'
+    - title: Javascript
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
+      color: '#f7cb4f'
+    - title: Kotlin
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
+      color: '#ffffff'
+    - title: WebPack
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
+      color: '#2e3a41'
+    - title: Git
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
+      color: '#df5b40'
+    - title: Docker
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
+      color: '#57b6e6'
+    - title: Visual Studio
+      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
+      color: '#ffffff'
+
+careers:
+  title: 'Career'
+  subtitle: 'Limitless progress'
+  items:
+    - school: 'Software'
+      major: 'Learn'
+      color: '#357ef5'
+  image: https://7.isyangs.cn/34/6603c9fe58ec7-34.png
+
+personalities:
+  tips: 'Nature'
+  title: 'Archon'
+  color: '#56a178'
+  type: 'ESFJ-A'
+  image: 'https:/example.com/ESFJ-A.svg'
+  link: 'https://www.16personalities.com/'
+  linkText: '16personalities'
+  typeLink: 'https://www.16personalities.com/ch/esfj-人格'
+  typeName: 'Archon'
+  myphoto: https://7.isyangs.cn/34/6603bf70d3c42-34.jpg
+
+motto:
+  title: Motto
+  prefix: Burn one's ship,
+  content: Whetstone front line.
+expertise:
+  title: Specialty
+  prefix: Mathematics, Physics, Chemistry
+  specialist: Expert
+  content: 'Ability to learn '
+  level: MAX
+
+#tj: # 统计
+#  url: https://v6-widget.51.la/v6/3F15j2vtdTo7PPcN/quote.js # 需要到51la官网注册自行获取
+#  img: https://7.isyangs.cn/1/65eb2e9109826-1.png # 背景
+#
+#oneself: # 按需填写
+#  location: 'Hunan Province, China' # 所在位置
+#  birthYear: '2004' # 生日
+#  university: 'Hunan University' # 毕业学校
+#  major: 'Software' # 专业
+#  occupation: 'Student' # 职位
+#  map: # 你所在位置的地图
+#    light: https://7.isyangs.cn/1/65eb2ec63a9aa-1.png # 白天
+#    dark: https://7.isyangs.cn/1/65eb2eedc780e-1.png # 夜晚
+
+#自定义
+cause:
+  tip: Mental journey
+  title: Why build a website?
+  content:
+    <br>When I created this website, I wanted to have a place where I could <b>accumulate knowledge and interests</b>. Sharing with others will make these accumulations and precipitation. If you can help more people and help more people solve problems, it must be a great thing.
+    <br>
+    Unlike most vertical technical blogs, the genre here will be very complicated, with <b>skill tutorials</b>, life <b>complaints and tips</b>, and <b>thoughts and ideas on topics</b>. Usually what I research and what I find will be shared here.
+    <br>
+    These are the original intentions of creating this little station, and <b>it is also the way I share my life</b>. I am fortunate to be here with you, and I believe that we can leave a good memory together.
+    <br>
+
+award:
+  enable: true
+  description: Thank you to the people who appreciated it, because you made me feel that blogging can be valuable to you. This will take me further down this path.
+  tips: 'The total amount: ¥ {sum}, all will be used for the maintenance and renewal of the blog.' # 必须带 {sum}，否则无法显示总金额
+rewardList: # 底部捐赠
+  - name: 悦华
+    money: 56
+    vip: true
+    time: 2023-08-25
+    icon: st-alipay-fill
