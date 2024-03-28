@@ -45,10 +45,10 @@ skills: # 根据需求添加
     - title: Final Cut Pro
       icon: /img/icon/final_cut_pro.png
       color: var(--efu-white)
-    - title: PS
+    - title: Adobe Photoshop
       icon: /img/icon/ps.png
       color: '#001E36'
-    - title: AI
+    - title: Adobe Illustrator
       icon: /img/icon/ai.png
       color: '#330202'
 
