@@ -1,0 +1,8 @@
+links:
+  - class_name: Skill
+    descr: I'll have skill points
+    link_list:
+      - name: C#
+        avatar: https://7.isyangs.cn/34/66057e6af11be-34.png
+        descr: A simple, modern, general-purpose, object-oriented programming language.
+        link: /

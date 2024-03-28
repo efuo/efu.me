@@ -1,0 +1,7 @@
+- class_name: Productivity
+  description: Hardware devices that improve your productivity.
+  equipment_list:
+    - name: Synology DS920+
+      specification: Super value
+      description: Great network storage solution as well as streaming servers.
+      image: https://7.isyangs.cn/1/65eb3d5f8057b-1.png

@@ -17,11 +17,13 @@ nav:
       Archives: /archives/ || st-folder-fill
       Categories: /categories/ || st-checkbox-multiple-blank-fill
       Tags: /tags/ || st-price-tag-fill
-    Links: /links/
-    #    Oneself:
-    #      Equipment: /equipment/ || st-laptop-line
-    #      Toolbox: /tlink/ || st-tools-fill
-    About: /about/
+    Friends:
+      Links: /links/ || st-group-fill
+      Treasure: javascript:travelling() || st-gift-fill
+    Oneself:
+      Equipment: /equipment/ || st-laptop-line
+      Toolbox: /toolbox/ || st-tools-fill
+      About Us: /about/ || st-contacts-fill
 
   right:
     random: true
@@ -73,8 +75,8 @@ hometop:
     sup: Sup
     title: Solitude Docs
     url: https://solitude-docs.efu.me/
-    img: /img/default.png
-    color: "#4fa5ce"
+    img: https://7.isyangs.cn/34/66056441c8cc0-34.jpg
+    color: "#0E83CD"
 
 aside:
   home:
@@ -188,14 +190,14 @@ post:
     time: 43200000
 
 theme_color:
-  dark: "#ffc848"
-  dark_op: "#f2b94b23"
-  dark_op_deep: "#f2b94bdd"
-  dark_none: "#f2b94b00"
-  light: "#425AEF"
-  light_op: "#4259ef23"
-  light_op_deep: "#4259efdd"
-  light_none: "#4259ef01"
+  dark: "#5BC167"
+  dark_op: "#5BC16723"
+  dark_op_deep: "#5BC167dd"
+  dark_none: "#5BC16700"
+  light: "#0E83CD"
+  light_op: "#0E83CD23"
+  light_op_deep: "#0E83CDdd"
+  light_none: "#0E83CD00"
 
 display_mode:
   type: auto
@@ -375,8 +377,8 @@ css_prefix: false
 font:
   font-size: 16px
   code-font-size: 16px
-  font-family: '"PingFang SC","Hiragino Sans GB","Microsoft YaHei"'
-  code-font-family: '"monospace", "monospace"'
+  font-family: 'PingFang SC, Hiragino Sans GB, Microsoft YaHei'
+  code-font-family: 'monospace, monospace'
 
 extends:
   head: # 在head中插入 / Insert in head

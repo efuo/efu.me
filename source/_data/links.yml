@@ -1,5 +1,20 @@
 banner_suffix:
 links:
+  - class_name: Framework
+    descr: The framework and theme used on the website.
+    type: card
+    suffix:
+    link_list:
+      - name: Hexo
+        link: https://hexo.io
+        descr: A fast, simple & powerful blog framework, powered by Node.js.
+        avatar: https://7.isyangs.cn/34/66055cc2e5864-34.jpg
+        topimg: https://7.isyangs.cn/34/66055e8b56061-34.png
+      - name: Solitude
+        link: https://github.com/valor-x/hexo-theme-solitude
+        descr: An elegant Hexo theme that supports lazy loading, PWA, Latex, and multiple comment systems.
+        avatar: https://7.isyangs.cn/34/66055fc40945a-34.png
+        topimg: https://7.isyangs.cn/34/660562305a284-34.png
   - class_name: Recommend
     descr: Excellent bloggers who participate in the development of this site, provide design inspiration, and donate to this site # 分类简介
     type: card
