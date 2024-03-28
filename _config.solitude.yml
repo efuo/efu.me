@@ -124,7 +124,7 @@ aside:
     vague: true
 
   tags:
-    enable: false
+    enable: true
     limit: 20
     highlight: false
     list:
@@ -184,7 +184,7 @@ post:
   rss: # /atom.xml
   covercolor:
     enable: true
-    mode: local
+    mode: api
     api: https://api.qjqq.cn/api/Imgcolor?img=
     time: 43200000
 
@@ -308,7 +308,7 @@ mediumZoom: false
 
 mermaid: false
 
-opengraph:
+OpenGraph:
   enable: true
   options:
   #  twitter_card:
@@ -342,6 +342,12 @@ search:
 rightside:
   enable: false
 
+copy:
+  enable: true
+  copyright:
+    enable: true
+    limit_count: 50
+
 katex:
   enable: false
   per_page: false # 是否在每页都加载 / Whether to load on each page
@@ -350,22 +356,18 @@ katex:
 # 评论
 # comment
 comment:
-  enable: false
-  type: # waline, twikoo
-  commentBarrage: false # 热评开关 / Hot comment switch
-  newComment: false # 最新评论开关 / Latest comment switch
+  enable: true
+  type: twikoo # waline, twikoo
+  commentBarrage: true # 热评开关 / Hot comment switch
+  newComment: true # 最新评论开关 / Latest comment switch
   randomInfoStart:
-    - "聪敏的"
-    - "可爱的"
-    - "美丽的"
+    - "A"
   randomInfoEnd:
-    - "白菜"
-    - "小可爱"
-    - "小仙女"
-  twikoo: # https://twikoo.js.org/
-    envId: # url: https://twikoo.sondy.top/
-    lang: "zh-CN" # 语言
-    accessToken: # accessToken
+    - "rabbit"
+  twikoo:  # https://twikoo.js.org/
+    envId: https://twikooo.netlify.app/.netlify/functions/twikoo # url: https://twikoo.sondy.top/
+    lang: "en" # 语言
+    accessToken: bb445ff1533947659d947618308952a0 # accessToken
 
 verify_site:
 
@@ -400,7 +402,7 @@ google_adsense:
   slot: # 4236388782
 
 CDN:
-  internal: cdnjs
+  internal: local
   third_party: cdnjs
 
   version: true
