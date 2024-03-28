@@ -66,8 +66,7 @@ hometop:
         color: '#330202'
 
   group:
-  # 热门: /tags/热门/ || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
-  # 教程: /tags/教程/ || st-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
+    GitHub: https://github.com/efuo || st-github-line || linear-gradient(to right,#f65,#ffbf37)
   # 精选: /tags/精选/ || st-star-smile-fill || linear-gradient(to right,#18e7ae,#1eebeb)
 
   recommendList:
@@ -364,7 +363,7 @@ comment:
     - "A"
   randomInfoEnd:
     - "rabbit"
-  twikoo:  # https://twikoo.js.org/
+  twikoo: # https://twikoo.js.org/
     envId: https://twikooo.netlify.app/.netlify/functions/twikoo # url: https://twikoo.sondy.top/
     lang: "en" # 语言
     accessToken: bb445ff1533947659d947618308952a0 # accessToken
